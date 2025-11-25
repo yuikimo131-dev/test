@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其味无穷 - Endless Flavor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>其味无穷</h1>
+            <p class="subtitle">Endless Flavor Combinations</p>
+        </header>
+
+        <main>
+            <section class="flavor-display">
+                <div class="combination-card">
+                    <h2>Your Flavor Combination</h2>
+                    <div class="flavors">
+                        <div class="flavor primary" id="primaryFlavor">
+                            <span class="flavor-name">Click generate to start</span>
+                        </div>
+                        <div class="plus">+</div>
+                        <div class="flavor secondary" id="secondaryFlavor">
+                            <span class="flavor-name">Click generate to start</span>
+                        </div>
+                    </div>
+                    <div class="description" id="description">
+                        Discover amazing flavor pairings that will elevate your culinary creations
+                    </div>
+                </div>
+            </section>
+
+            <section class="controls">
+                <button id="generateBtn" class="generate-btn">
+                    <span class="btn-text">Generate New Combination</span>
+                    <span class="btn-icon">🎲</span>
+                </button>
+                <button id="saveBtn" class="save-btn">
+                    <span class="btn-text">Save Combination</span>
+                    <span class="btn-icon">💾</span>
+                </button>
+            </section>
+
+            <section class="saved-combinations">
+                <h3>Saved Combinations</h3>
+                <div id="savedList" class="saved-list">
+                    <p class="empty-state">No saved combinations yet. Generate and save your favorites!</p>
+                </div>
+            </section>
+
+            <section class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalGenerated">0</span>
+                    <span class="stat-label">Combinations Generated</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalSaved">0</span>
+                    <span class="stat-label">Combinations Saved</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Explore the infinite world of flavors • 其味无穷</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
