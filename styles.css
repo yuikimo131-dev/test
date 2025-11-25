@@ -211,6 +211,17 @@ main {
     color: white;
 }
 
+.save-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.save-btn:disabled:hover {
+    transform: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 .btn-icon {
     font-size: 1.2rem;
 }
